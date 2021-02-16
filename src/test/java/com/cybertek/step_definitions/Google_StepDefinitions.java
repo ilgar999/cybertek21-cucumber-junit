@@ -39,7 +39,7 @@ public class Google_StepDefinitions {
         String expectedInTitle = "apple";
         Assert.assertTrue(actualTitle.contains(expectedInTitle));
 
-        Driver.closeDriver();
+        //Driver.closeDriver();
     }
 
     @When("User searches for {string}")
@@ -54,6 +54,6 @@ public class Google_StepDefinitions {
         String expectedInTitle = string;
         Assert.assertTrue(actualTitle.contains(expectedInTitle));
 
-        Driver.closeDriver();
+        //Driver.closeDriver();
     }
 }
