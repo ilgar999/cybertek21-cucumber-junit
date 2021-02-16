@@ -18,3 +18,15 @@ Feature: Google search functionality
     Given User is on Google home page
     When User searches for "orange"
     Then User should see "orange" in the title
+
+    @googleDataTable
+  Scenario: Google home page footer links verification
+    Given User is on Google home page
+    Then User should see following links
+      | Advertising      |
+      | Business         |
+      | How Search works |
+      | Privacy          |
+      | Terms            |
+
+
